@@ -1,0 +1,5 @@
+.env
+*.pdf
+*.txt
+*-all.yml
+.github

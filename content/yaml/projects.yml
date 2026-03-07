@@ -1,0 +1,20 @@
+﻿- title: "Personal Projects"
+  items:
+    - name: "Collaborate-MDE"
+      icon: "users"
+      description: |
+        Real-time collaborative text editor built with Firebase, WebRTC, and Yjs, enabling multiple users to edit a document simultaneously.
+    - name: "hclq"
+      icon: "terminal"
+      description: |
+        Lightweight Go CLI tool to read and update HashiCorp Configuration Language (HCL) files used by Terraform and Vault.
+- title: "Academic Projects"
+  items:
+    - name: "WebZTP"
+      icon: "network-wired"
+      description: |
+        Django web-based interface to automate router provisioning through Zero-Touch Provisioning (ZTP), for day-0 network deployment and reducing manual configuration.
+    - name: "WeListen"
+      icon: "music"
+      description: |
+        Full-stack music streaming platform built with Laravel, React, and Inertia.js, allowing users to upload, stream, and manage playlists in real time.
