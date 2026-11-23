@@ -1,0 +1,71 @@
+# Portal Scanner Configuration Template — PhD & CIFRE ONLY
+# Copy to portals.yml and customize filters and boards.
+
+max_posting_age_days: 180
+
+title_filter:
+  positive:
+    - "thèse"
+    - "these"
+    - "cifre"
+    - "phd"
+    - "ph.d"
+    - "doctoral"
+    - "doctorant"
+    - "doctorat"
+  negative:
+    - "java"
+    - "jee"
+    - "spring boot"
+    - "cdi"
+    - "stage"
+    - "stagiaire"
+    - "intern"
+    - "post-doc"
+    - "postdoc"
+    - "alternance"
+    - "senior"
+    - "lead"
+    - "manager"
+    - "director"
+
+location_filter:
+  positive:
+    - "paris"
+    - "france"
+    - "europe"
+    - "switzerland"
+    - "remote"
+    - "hybrid"
+  negative:
+    - "us only"
+    - "united states"
+    - "usa"
+    - "security clearance"
+
+search_queries:
+  - name: "PhD / CIFRE — Cloud, Scheduling & Distributed Systems"
+    query: '(site:jobs.inria.fr OR site:emploi.cnrs.fr OR site:adum.fr OR site:doctorat.gouv.fr) ("CIFRE" OR "thèse" OR "PhD") ("scheduling" OR "Kubernetes" OR "cloud") -Java'
+
+tracked_companies:
+  - name: "doctorat.gouv.fr (National ADUM / CIFRE Portal)"
+    careers_url: "https://app.doctorat.gouv.fr/"
+    scan_method: local_parser
+    parser:
+      command: node
+      script: scripts/parsers/doctorat-gouv.mjs
+      format: jobs-json-v1
+    enabled: true
+  - name: "Inria (PhD)"
+    careers_url: "https://jobs.inria.fr/public/classic/fr/offres"
+    scan_method: local_parser
+    parser:
+      command: node
+      script: scripts/parsers/inria-phd.mjs
+      format: jobs-json-v1
+    enabled: true
+  - name: "CERN (Doctoral Student Programme)"
+    careers_url: "https://careers.smartrecruiters.com/CERN"
+    provider: smartrecruiters
+    api: "https://api.smartrecruiters.com/v1/companies/CERN/postings"
+    enabled: true

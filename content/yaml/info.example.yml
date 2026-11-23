@@ -1,0 +1,16 @@
+# Personal identity, contact & school metadata template.
+# Copy to content/yaml/info.yml and fill in your own details (real info.yml is gitignored).
+
+full_name: "Jane Smith"
+slug: "jane-smith"
+email: "jane@example.com"
+phone: "+33 6 00 00 00 00"
+github: "github.com/janesmith"
+linkedin: "linkedin.com/in/janesmith"
+location: "Paris, France"
+city: "Paris"
+availability: "September 2027"
+school:
+  france: "Example Engineering School"
+  international: "Example Institute of Technology"
+  degree_default: "Master of Engineering in Computer Science and Networking"

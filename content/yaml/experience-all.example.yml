@@ -1,0 +1,61 @@
+# Master experience bank template — copy to content/yaml/experience-all.yml and fill in your real history.
+# Metadata fields (id, company, role, location, dates, required, archetypes, tracks, tags, status,
+# priority, max_items) are stripped automatically when exporting YAML for main.typ.
+
+- id: "acme-platform-engineer"
+  title: "Platform Engineer - Intern, Acme Cloud"
+  info: "2025 — Present"
+  company: "Acme Cloud"
+  role: "Platform Engineer - Intern"
+  location: "Paris, France"
+  dates: "2025 — Present"
+  required: true
+  status: "done"
+  archetypes: [platform-sre, inference-infra, sched-agentic]
+  tags: [kubernetes, terraform, aws, docker, ci-cd, gitops, vault, operator]
+  description: "Maintaining and automating Kubernetes infrastructure for production web services."
+  max_items: 3
+  items:
+    - id: "acme-k8s-gitops"
+      icon: "server"
+      archetypes: [platform-sre, sched-agentic]
+      tags: [kubernetes, argocd, helm, gitops, ci-cd]
+      priority: 1
+      status: "done"
+      text: "Automated cluster lifecycle workflows with ArgoCD, Helm, and declarative Kubernetes manifests."
+    - id: "acme-vault"
+      icon: "key"
+      archetypes: [platform-sre, embedded-sec]
+      tags: [vault, security, pki, automation]
+      priority: 2
+      status: "done"
+      text: "Centralized internal TLS certificate issuance and renewal using HashiCorp Vault."
+
+- id: "example-lab-intern"
+  title: "Systems Intern, Example Research Lab"
+  info: "2024"
+  company: "Example Research Lab"
+  role: "Systems Intern"
+  location: "Geneva, Switzerland"
+  dates: "2024"
+  required: true
+  status: "done"
+  archetypes: [platform-sre, inference-infra]
+  tags: [kubernetes, kustomize, bash, bats, testing, observability]
+  description: "Contributed to container platform reliability and automated test suites."
+  max_items: 2
+  items:
+    - id: "lab-operator-migration"
+      icon: "diagram-project"
+      archetypes: [platform-sre, inference-infra]
+      tags: [kubernetes, operator, kustomize, helm]
+      priority: 1
+      status: "done"
+      text: "Migrated cluster operators to Kustomize overlays integrated with the standard GitOps deployment pipeline."
+    - id: "lab-e2e-tests"
+      icon: "vial"
+      archetypes: [platform-sre]
+      tags: [bash, bats, testing, e2e, ci-cd]
+      priority: 2
+      status: "done"
+      text: "Implemented end-to-end Bash test suites with BATS to validate cluster upgrade workflows."

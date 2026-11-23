@@ -1,0 +1,28 @@
+{
+  "name": "curriculum-vitae-career-ops",
+  "version": "1.0.0",
+  "description": "Typst CV & cover-letter tailoring pipeline integrated with career-ops (portal scanning, JD evaluation, fact-checking, ATS keyword matching, and ADUM PDF dossier merging)",
+  "private": true,
+  "engines": {
+    "node": "^22.13.0 || >=23.4.0"
+  },
+  "scripts": {
+    "scan:phd": "node scan.mjs",
+    "scan:cdi": "CAREER_OPS_PORTALS=portals.cdi-vie.yml node scan.mjs",
+    "sync": "node scripts/typst/sync-cv-md.mjs",
+    "score": "node scripts/typst/select-from-bank.mjs score",
+    "apply-selection": "node scripts/typst/select-from-bank.mjs apply",
+    "build": "node scripts/typst/build-typst-cv.mjs",
+    "merge-dossiers": "node scripts/typst/merge-dossier.mjs --all",
+    "skill-gap": "node jd-skill-gap.mjs",
+    "verify-facts": "node verify-cv-facts.mjs",
+    "keyword-match": "node keyword-match.mjs",
+    "doctor": "node doctor.mjs --json && node validate-profile.mjs && node validate-portals.mjs && node validate-portals.mjs --file portals.cdi-vie.yml"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "js-yaml": "^5.3.0",
+    "playwright": "1.64.1",
+    "undici": "^7.30.1"
+  }
+}

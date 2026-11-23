@@ -1,0 +1,13 @@
+# Master education bank template — copy to content/yaml/education-all.yml.
+# select-from-bank.mjs adapts school naming and optional specialty into content/yaml/education.yml and bundles.
+
+- title: Example Engineering School
+  info_top_left: Present
+  info_top_right: Paris, France
+  degree: Master of Engineering in Computer Science and Networking
+  comment: (Apprenticeship)
+- title: Example University
+  info_top_left: '2024'
+  info_top_right: Paris, France
+  degree: Bachelor of Technology in Networks and Telecommunications
+  comment: (Apprenticeship)

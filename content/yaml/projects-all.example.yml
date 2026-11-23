@@ -1,0 +1,55 @@
+# Master projects bank template — copy to content/yaml/projects-all.yml and fill in your real projects.
+# Rules:
+# - status: done | in-progress | planned
+# - Items with status: planned are NEVER included automatically as completed experience.
+
+- id: "group-personal"
+  title: "Personal Projects"
+  max_items: 2
+  items:
+    - id: "proj-config-cli"
+      name: "cfgctl"
+      icon: "terminal"
+      archetypes: [platform-sre, inference-infra]
+      tags: [go, terraform, hcl, cli, ci-cd]
+      priority: 1
+      status: "done"
+      description: |
+        Lightweight Go CLI utility to query and update declarative infrastructure configuration files in CI/CD pipelines.
+
+    - id: "proj-gpu-lab"
+      name: "Heterogeneous GPU Plugin (Home Lab)"
+      icon: "microchip"
+      archetypes: [inference-infra, sched-agentic]
+      tracks: [cifre-phd, cdi-fr]
+      tags: [go, kubernetes, operator, gpu, device-plugin]
+      priority: 2
+      status: "planned"
+      description: |
+        Planned home-lab project: Kubernetes device plugin for vendor-agnostic GPU discovery on Linux.
+
+- id: "group-academic"
+  title: "Academic Projects"
+  max_items: 2
+  items:
+    - id: "proj-embedded-crypto"
+      name: "Embedded-Crypto"
+      icon: "shield-halved"
+      archetypes: [embedded-sec]
+      tracks: [cifre-phd, cdi-fr]
+      tags: [rust, c, embedded, cryptography, cross-compilation]
+      priority: 1
+      status: "in-progress"
+      description: |
+        Final Year Project: cross-compiled implementation of post-quantum key encapsulation on a constrained microcontroller.
+
+    - id: "proj-net-ztp"
+      name: "AutoZTP"
+      icon: "network-wired"
+      archetypes: [network-5g6g, platform-sre]
+      tracks: [cifre-phd, vie, cdi-fr]
+      tags: [python, networking, automation, templates]
+      priority: 1
+      status: "done"
+      description: |
+        Web interface automating day-0 router provisioning using Zero-Touch Provisioning configuration templates.

@@ -1,0 +1,1 @@
+../../../.agent/skills/typst-cv/SKILL.md

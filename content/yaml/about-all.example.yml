@@ -1,0 +1,37 @@
+# Master about / profile text variants template — copy to content/yaml/about-all.yml.
+# Supports optional [[highlighted text]] markers rendered via #highlight[...] in main.typ.
+
+default:
+  en:
+    lang: "en"
+    headline: "Systems & Cloud-Native Engineer"
+    about_me: >-
+      Computer Science and Networking engineering student with hands-on experience
+      in Kubernetes lifecycle management, GitOps automation, and declarative cloud
+      infrastructure.
+    profile: >-
+      Seeking a [[PhD position or Platform Engineering role]] focused on distributed
+      systems, cloud-native orchestration, and reliable infrastructure automation.
+
+platform-sre:
+  en:
+    lang: "en"
+    headline: "Platform / SRE & DevOps Engineer"
+    about_me: >-
+      Engineering student with production experience building and operating Kubernetes
+      clusters, GitOps pipelines (ArgoCD, Helm, Kustomize), and Infrastructure as Code.
+    profile: >-
+      Seeking a [[Platform Engineering, SRE, or DevOps role]] focused on Kubernetes
+      platforms, GitOps automation, and cloud-native reliability.
+
+sched-agentic:
+  en:
+    lang: "en"
+    headline: "Research-Oriented Systems & Cloud Engineer"
+    about_me: >-
+      Computer Science and Networking engineering student combining production
+      Kubernetes/GitOps experience with real-time systems coursework. Research
+      interests focus on cloud workload scheduling and orchestration.
+    profile: >-
+      Seeking a [[PhD or CIFRE doctoral position]] on pipeline and resource scheduling
+      in distributed cloud-native infrastructures.

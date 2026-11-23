@@ -1,0 +1,99 @@
+# Master skills bank template — copy to content/yaml/skills-all.yml and customize.
+# Rules:
+# - Never add unmastered research watchlist technologies.
+# - Items with confirm_before_cv: true or status: in-progress require confirmation before CV inclusion.
+
+- id: "cat-infra"
+  name: "Infrastructure"
+  icon: "server"
+  priority: 1
+  max_skills: 10
+  archetypes: [platform-sre, inference-infra, sched-agentic]
+  skills:
+    - name: "Kubernetes"
+      archetypes: [platform-sre, inference-infra, sched-agentic]
+      tags: [kubernetes, k8s, containers, operator]
+      priority: 1
+      status: "done"
+    - name: "Terraform"
+      archetypes: [platform-sre]
+      tags: [terraform, iac]
+      priority: 1
+      status: "done"
+    - name: "Docker"
+      archetypes: [platform-sre, inference-infra]
+      tags: [docker, containers]
+      priority: 1
+      status: "done"
+    - name: "ArgoCD"
+      archetypes: [platform-sre, sched-agentic]
+      tags: [argocd, gitops]
+      priority: 1
+      status: "done"
+    - name: "Helm"
+      archetypes: [platform-sre, inference-infra]
+      tags: [helm, kubernetes]
+      priority: 1
+      status: "done"
+    - name: "CI/CD"
+      archetypes: [platform-sre, sched-agentic]
+      tags: [ci-cd, pipelines]
+      priority: 1
+      status: "done"
+
+- id: "cat-programming"
+  name: "Programming"
+  icon: "code"
+  priority: 1
+  max_skills: 6
+  archetypes: [platform-sre, inference-infra, embedded-sec, network-5g6g, sched-agentic]
+  skills:
+    - name: "Go"
+      archetypes: [platform-sre, inference-infra, sched-agentic]
+      tags: [go, golang]
+      priority: 1
+      status: "done"
+    - name: "Python"
+      archetypes: [platform-sre, network-5g6g, sched-agentic]
+      tags: [python, automation]
+      priority: 1
+      status: "done"
+    - name: "C"
+      archetypes: [embedded-sec, inference-infra, sched-agentic]
+      tags: [c, systems, embedded]
+      priority: 1
+      status: "done"
+    - name: "Bash"
+      archetypes: [platform-sre]
+      tags: [bash, shell, linux]
+      priority: 1
+      status: "done"
+    - name: "Rust"
+      archetypes: [embedded-sec]
+      tags: [rust, embedded]
+      priority: 2
+      status: "in-progress"
+      confirm_before_cv: true
+
+- id: "cat-networking"
+  name: "Networking"
+  icon: "network-wired"
+  priority: 2
+  max_skills: 5
+  archetypes: [network-5g6g, platform-sre]
+  skills:
+    - name: "TCP/IP"
+      archetypes: [network-5g6g, platform-sre]
+      tags: [tcp-ip, networking]
+      priority: 1
+      status: "done"
+    - name: "HTTP"
+      archetypes: [platform-sre, network-5g6g]
+      tags: [http, networking]
+      priority: 1
+      status: "done"
+    - name: "DNS"
+      archetypes: [platform-sre, network-5g6g]
+      tags: [dns, networking]
+      priority: 1
+      status: "done"
